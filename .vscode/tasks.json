@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar Campo Minado",
+            "command": "C:/msys64/ucrt64/bin/g++.exe",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/Interface.cpp",
+                "${workspaceFolder}/CampoMinado.cpp",
+                "-IC:/SFML-2.6.1/include",
+                "-LC:/SFML-2.6.1/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-lsfml-main",
+                "-o",
+                "${workspaceFolder}/CampoMinado.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compila Campo Minado com SFML 2.6.1"
+        }
+    ]
+}
